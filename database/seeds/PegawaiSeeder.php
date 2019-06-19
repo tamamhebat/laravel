@@ -17,7 +17,7 @@ class PegawaiSeeder extends Seeder
         $faker = Faker::create('id_ID');
 
         // membuat data dummy sebanyak 10 record
-        for($x = 1; $x <= 100; $x++){
+        for($x = 1; $x <= 10; $x++){
 
         	// insert data dummy pegawai dengan faker
         	DB::table('pegawai')->insert([
