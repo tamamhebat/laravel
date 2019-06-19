@@ -31,3 +31,11 @@ Route::get('/guru/trash', 'GuruController@trash');
 
 // Relasi tabel
 Route::get('/pengguna', 'PenggunaController@index');
+// Relasi one to many
+Route::get('/article', 'WebController@index');
+//Relasi many to many
+Route::get('/anggota', 'DikiController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
